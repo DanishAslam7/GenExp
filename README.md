@@ -1,6 +1,6 @@
 # GenExp
 
-This R code is designed to extract gene expression profiles of specific genes from the Gene Expression Omnibus (GEO) datasets. The code leverages publicly available functional genomics data from GEO, a comprehensive repository of gene expression information. By focusing on genes of interest related to the progression of Alzheimer's disease, this code aims to obtain relevant expression data for further analysis.
+This R code is designed to extract gene expression profiles of specific genes from the Gene Expression Omnibus (GEO) datasets. The code leverages publicly available data from GEO, a comprehensive repository of gene expression datasets. By focusing on genes of interest related to the progression of disease of interest, this code aims to obtain relevant expression data for further analysis.
 
 # Prerequisites
 Before using this code, ensure the following prerequisites are met:
