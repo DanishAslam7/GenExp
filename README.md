@@ -1,14 +1,36 @@
 # GenExp
-This is the R code to extract Gene Expression Profiles of particular genes from GEO (Gene Expression Omnibus) datasets.
 
-Prerequisites:
-# DATA COLLECTION
+This R code is designed to extract gene expression profiles of specific genes from the Gene Expression Omnibus (GEO) datasets. The code leverages publicly available functional genomics data from GEO, a comprehensive repository of gene expression information. By focusing on genes of interest related to the progression of Alzheimer's disease, this code aims to obtain relevant expression data for further analysis.
 
-  # GenBank is the NIH genetic sequence database, an annotated collection of all publicly available DNA sequences  (https://www.ncbi.nlm.nih.gov/genbank/)
-  Do a Literature Review to find genes of interest. In my case, I had 9 genes of interest because of their role in the progression of Alzheimer's disease.
-  
-  # GEO is a public functional genomics data repository (https://www.ncbi.nlm.nih.gov/geo/)
-  Choose expression datasets from GEO relevant to your study. The datasets must be related to your disease of interest, for example, the datasets that I used were associated with Alzheimer's disease.
+# Prerequisites
+Before using this code, ensure the following prerequisites are met:
 
-  # My study was focused on just the 9 genes of interest so I wanted just their expression profiles from the dataset.
-  You don't need to download the datasets. Just make sure to keep a note of the reference series number assocated with the accesion number of your sample since this will be used in extraction steps.
+ ## Data Collection:
+Conduct a thorough literature review to identify genes of interest that play significant roles in the development of Alzheimer's disease. GenBank, the NIH genetic sequence database, can be used to access publicly available DNA sequences (https://www.ncbi.nlm.nih.gov/genbank/).
+
+GEO Datasets Selection:
+Choose expression datasets from GEO that are directly relevant to your study. These datasets should be associated with Alzheimer's disease and contain gene expression information. The code focuses on extracting data for specific genes, so make sure to identify the datasets that align with your research.
+
+Procedure
+Identify Genes of Interest:
+Based on your literature review and research objectives, select genes that are of interest for studying their expression patterns in Alzheimer's disease.
+
+Note the Reference Series Number:
+For the samples of interest, take note of the reference series numbers associated with the accession numbers. These reference series numbers will be used in the extraction steps to target specific samples.
+
+Run the R Code:
+Execute the provided R code to perform the extraction process. The code reads and normalizes gene expression data from the selected GEO datasets using the Robust Multi-array Average (RMA) method.
+
+Data Manipulation:
+The code manipulates the gene expression data, including merging with additional feature-level data that likely contains gene annotations.
+
+Extract Expression Profiles:
+The code extracts the expression profiles for the genes of interest based on their unique identifiers (IDs) from the normalized data.
+
+Resulting Data:
+The output will be a subset of gene expression profiles specific to the selected genes, ready for further analysis and investigation.
+
+Note
+It is essential to ensure that the chosen datasets from GEO are relevant to your research and aligned with the focus of your study. The code is designed to concentrate on specific genes, so accuracy in selecting the genes of interest and associated reference series numbers is critical for obtaining meaningful results. Additionally, no need to download the datasets; the code extracts the necessary information directly from GEO.
+
+For any questions or clarifications, feel free to contact the author of this code.
